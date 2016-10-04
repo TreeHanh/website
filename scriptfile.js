@@ -1,19 +1,21 @@
-<script type="text/javascript">
-    window.onload = maxWindow;
+//$('#click-trigger').on('click', function(e) {
+//  event.preventDefault();
+//  $('.menu').toggleClass('hide');
+//
+//});
+//
+//$('#close-toggle').on('click', function(e) {
+//  event.preventDefault();
+//  $('.menu').addClass('hide');
+//});
 
-    function maxWindow() {
-        window.moveTo(0, 0);
+/* Set the width of the side navigation to 250px */
+function openNav() {
 
+    document.getElementById("mySidenav").style.width = "100%";
+}
 
-        if (document.all) {
-            top.window.resizeTo(screen.availWidth, screen.availHeight);
-        }
-
-        else if (document.layers || document.getElementById) {
-            if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
-                top.window.outerHeight = screen.availHeight;
-                top.window.outerWidth = screen.availWidth;
-            }
-        }
-    }
-</script> 
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
