@@ -11,14 +11,16 @@ body {
     max-width: 90px;
     width: 15%;
     z-index: 1;
-    margin-top: 2.6%;
+    margin-top: 15px;
+    margin-left: 4%;
     
 }
 .hamburger i {
     float: right;
     display: inline-block;
     width:2vw;
-    margin: 4.5%;
+    margin-top: 25px;
+    margin-right: 5%;
     min-width: 25px;
     color: #6C6150;
 }
@@ -66,37 +68,14 @@ body {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-    transition: margin-left .5s;
-    padding: 20px;
 }
-
-img {
-  width:2vw;
-  margin: 4%;
-  min-width: 25px;
+.row {
+    text-align: center;
+    padding-top: 200px;
+    margin: 1%;
 }
-
-.sld-abt {
-  color: #fff;
-  width: 40vw;
-  padding: 5%;
-  margin: 100px auto;
-  text-align: center;
-  font-size: 2em;
-  font-family: sans-serif;
-  transition: all .5s ease;
-  border-radius: 10px;
-}
-
-.social {
-  background-color: navy;
-}
-
-.social:hover {
-  outline: 2px solid navy;
-  background-color: #ffffff;
-  color: teal;
-  text-decoration: none;
+.row img {
+    width: 60%;
 }
 
 .arrow {
