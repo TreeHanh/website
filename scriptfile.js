@@ -1,14 +1,3 @@
-//$('#click-trigger').on('click', function(e) {
-//  event.preventDefault();
-//  $('.menu').toggleClass('hide');
-//
-//});
-//
-//$('#close-toggle').on('click', function(e) {
-//  event.preventDefault();
-//  $('.menu').addClass('hide');
-//});
-
 /* Set the width of the side navigation to 250px */
 function openNav() {
 
@@ -19,3 +8,14 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+$('#click-trigger').on('click',function(e){
+		event.preventDefault();
+		$('.menu').toggleClass('hide');
+		
+	});
+
+		$('#close-toggle').on('click', function(e){
+			event.preventDefault();
+			$('.menu').addClass('hide');
+		});

@@ -3,6 +3,7 @@
 body {
     font-family: "Avenir";
     font-weight: 200;
+    text-decoration: none;
 }
 #logoNav .logo img {
     float: left;
@@ -10,20 +11,18 @@ body {
     max-width: 90px;
     width: 15%;
     z-index: 1;
-    margin-top: 3%;
+    margin-top: 2.6%;
     
 }
-.hamburger img {
+.hamburger i {
     float: right;
     display: inline-block;
     width:2vw;
     margin: 4.5%;
     min-width: 25px;
+    color: #6C6150;
 }
 
-.openNav img {
-    margin-top: 20px;
-}
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -31,10 +30,10 @@ body {
     z-index: 1; /* Stay on top */
     top: 0;
     right: 0;
-    background-color: lightslategray; /* Black*/
+    background-color: #e5e5e5; 
     opacity: .9;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 150px; /* Place content 60px from the top */
+    padding-top: 100px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -43,43 +42,32 @@ body {
     padding: 8px 8px 8px 32px;
     padding-top: 20px;
     text-decoration: none;
-    font-size: 25px;
-    color: white;
+    font-size: 20px;
+    color: dimgray;
     display: block;
     transition: 0.3s;
     text-align: center;
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+.sidenav a:hover, .offcanvas a:focus a:active{
+    color: teal;
     text-decoration: none;
 }
 
 /* Position and style the close button (top right corner) */
 .closebtn {
-    position: absolute;
+    text-align: center;
     top: 0;
-    right: 25px;
-    font-size: 36px !important;
-    margin-left: 50px;
+    font-size: 60px !important;
+    transform: rotateZ(90);
+    transform:
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
     padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
-
 }
 
 img {
@@ -107,5 +95,63 @@ img {
 .social:hover {
   outline: 2px solid navy;
   background-color: #ffffff;
-  color: blue;
+  color: teal;
+  text-decoration: none;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+}
+.arrow i {
+    color: #94D2BA;
+}
+.bounce {
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+}
+.animated{
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+    animation-fill-mode:both;
+    -webkit-animation-duration:1.5s;
+    -moz-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    -o-animation-duration:1.5s;
+    animation-duration:1.5s;
+}
+
+
+@-webkit-keyframes bounce {
+	30% {-webkit-transform: translateY(0);}	
+    30% {-webkit-transform: translateY( -35px);}
+	30% {-webkit-transform: translateY(-20px);}
+}
+
+@keyframes bounce {
+	30% {transform: translateY(0);}
+	30% {transform: translateY(-35px);}
+	30% {transform: translateY(-20px);}
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+
 }
