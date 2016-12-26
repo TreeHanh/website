@@ -727,14 +727,17 @@ form label {
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #252525;
+  background: #93d1b9;
   transition: all .2s ease-out;
+}
+.main-nav {
+    margin-top: 3px;
 }
 .gtco-nav-toggle i::before, .gtco-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 2px;
-  background: #252525;
+  background: #93d1b9;
   position: absolute;
   left: 0;
   transition: all .2s ease-out;
@@ -788,7 +791,7 @@ form label {
 .gtco-nav-toggle {
   position: fixed;
   right: 0px;
-  top: 10px;
+  top: 13px;
   z-index: 21;
   padding: 6px 0 0 0;
   display: block;
