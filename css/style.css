@@ -409,6 +409,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   min-height: 700px;
   position: relative;
+  width: 100%;
 }
 #gtco-hero .flexslider .flex-control-nav {
   bottom: 40px;
@@ -510,6 +511,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
+/*-----SOCIAL ICONS-----*/
 .socialmedia {
   margin-top: 100px;
   text-align: center;
@@ -556,6 +558,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 /*---grid---*/
 #gtco-offcanvas {
+  padding-top: 30px;
   position: absolute;
   position: fixed;
   z-index: 1901;
@@ -585,13 +588,20 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: translateX(0px);
 }
 #gtco-offcanvas a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 #gtco-offcanvas a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 #gtco-offcanvas ul {
-  padding: 0;
+  padding-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
   margin: 0;
 }
 #gtco-offcanvas ul li {
@@ -610,7 +620,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-offcanvas ul li.offcanvas-has-dropdown > a:after {
   position: absolute;
   right: 0px;
-  font-family: 'icomoon';
+  font-family: 'Roboto';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -782,32 +792,6 @@ h1, h2, h3, h4, h5, h6, figure {
   text-decoration: none !important;
 }
 
-/*-----SOCIAL ICONS-----*/
-.gtco-social-icons {
-  margin: 0;
-  padding: 0;
-}
-.gtco-social-icons li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-.gtco-social-icons li a {
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  color: #4E705D;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.gtco-social-icons li a i {
-  font-size: 20px;
-}
 
 /*-----FOOTER-----*/
 #gtco-footer {
@@ -825,6 +809,9 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 40px;
     padding-bottom: 20px;
 }
+
+
+
 /*-----GO TO TOP-----*/
 .gototop {
   position: fixed;
