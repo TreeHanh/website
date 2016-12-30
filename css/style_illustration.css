@@ -815,3 +815,16 @@ h1, h2, h3, h4, h5, h6, figure {
 .gototop a:hover {
     opacity: .7;
 }
+@media screen and (max-width: 380px) {
+  .gtco-nav img {
+  max-width: 295px;
+  padding-top: 2px;
+}
+}
+@media screen and (max-width: 320px) {
+  .gtco-nav img {
+  max-width: 200px;
+  padding-top: 13px;
+  padding-bottom: 5px;
+}
+}
