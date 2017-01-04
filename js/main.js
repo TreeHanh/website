@@ -407,42 +407,11 @@ $(window).scroll(function($e){
 });
 
 
-    function showHide() {
-        var ele = document.getElementById("showHideDiv");
-        var ele1 = document.getElementById("showHideDiv1");
-        var ele2 = document.getElementById("showHideDiv2");
-        ele1.style.display = "none";
-        ele2.style.display = "none";
-        if(ele.style.display == "block") {
-                ele.style.display = "none";             
-          }
-        else {
-            ele.style.display = "block";            
-        }
-    }
-    function showHide1() {
-        var ele = document.getElementById("showHideDiv");
-        var ele1 = document.getElementById("showHideDiv1");
-        var ele2 = document.getElementById("showHideDiv2");
-        ele.style.display = "none";
-        ele2.style.display = "none";
-        if(ele1.style.display == "block") {
-                ele1.style.display = "none";
-          }
-        else {
-            ele1.style.display = "block";
-        }
-    }
-    function showHide2() {
-        var ele = document.getElementById("showHideDiv");
-        var ele1 = document.getElementById("showHideDiv1");
-        var ele2 = document.getElementById("showHideDiv2");
-        ele.style.display = "none";
-        ele1.style.display = "none";
-        if(ele2.style.display == "block") {
-                ele2.style.display = "none";
-          }
-        else {
-            ele2.style.display = "block";
-        }
-    }
+$('.port-filter .filter').click(function() {
+  filter = $(this).data('filter');
+  $('.active').removeClass('active');
+  $(this).addClass('active');
+  
+  $('.gtco-card-item').addClass('hidden');
+  $(filter).removeClass('hidden');
+});
