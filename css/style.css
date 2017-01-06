@@ -12,6 +12,19 @@
   opacity: 0;
 }
 
+.docs p{
+    text-align: center;
+    color: color: #777;
+}
+.docs p:hover {
+    text-align: center;
+}
+* { box-sizing: border-box; }
+.heads-up {
+  transform: translateY(-6rem);
+  transform: translate3d(0,-6rem,0);
+}
+
 body {
   font-family: "Roboto", "Avenir", Arial, sans-serif;
   font-weight: 400;
@@ -59,7 +72,7 @@ body {
 }
 
 a {
-  color: #94D2BA;
+  color: #777;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
