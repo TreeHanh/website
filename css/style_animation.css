@@ -5,6 +5,16 @@
   font-weight: normal;
   font-style: normal;
 }
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
 .docs p{
     text-align: center;
     color: color: #777;
@@ -65,7 +75,7 @@ body {
 }
 
 a {
-  color: #777;
+  color: #6b6050;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -804,6 +814,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 /* Owl Override Style */
+.row-container{
+    padding-bottom: 40px;
+}
+
 .owl-carousel .owl-controls,
 .owl-carousel-posts .owl-controls {
   margin-top: 0;
@@ -813,7 +827,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel-posts .owl-controls .owl-nav .owl-next,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-  top: 50%;
+  top: 46%;
   margin-top: -39px;
   z-index: 9999;
   position: absolute;
@@ -829,20 +843,20 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .owl-carousel .owl-controls .owl-nav .owl-next,
 .owl-carousel-posts .owl-controls .owl-nav .owl-next {
-  right: 20px;
+  right: -17px;
 }
 .owl-carousel .owl-controls .owl-nav .owl-next:hover,
 .owl-carousel-posts .owl-controls .owl-nav .owl-next:hover {
-  margin-right: -10px;
+  margin-right: 0px;
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-  left: 20px;
+  left: -17px;
 }
 .owl-carousel .owl-controls .owl-nav .owl-prev:hover,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover {
-  margin-left: -10px;
+  margin-left: 0px;
 }
 
 .owl-carousel-posts .owl-controls .owl-nav .owl-next i,
@@ -878,14 +892,16 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"] i {
   font-size: 24px;
-  background: #FF5126 !important;
+  background: dimgray!important;
   padding: 12px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+   opacity: .4;
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"]:hover i, .owl-theme .owl-controls .owl-nav [class*="owl-"]:focus i {
-  background: #FF5126 !important;
+  background: dimgray !important;
+  opacity: .7;
 }
 
 .owl-theme .owl-dots {
@@ -903,7 +919,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .owl-theme .owl-dots .owl-dot span {
   width: 10px;
   height: 10px;
-  background: #FF5126;
+  background: lightgray;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -911,12 +927,12 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .owl-theme .owl-dots .owl-dot span:hover {
   background: none;
-  border: 2px solid #FF5126;
+  border: 2px solid gray;
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: none;
-  border: 2px solid #FF5126;
+  border: 2px solid lightgray;
 }
 
 /*-----FOOTER-----*/
