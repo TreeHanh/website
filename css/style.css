@@ -417,7 +417,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
 }
 #gtco-hero .flexslider .flex-control-nav {
-  bottom: 40px;
+  bottom: 90px;
   z-index: 1000;
 }
 #gtco-hero .flexslider .flex-control-nav li a {
@@ -444,7 +444,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-hero .flexslider .flex-direction-nav a:before {
   left: 0;
   top: 0;
-  color: lightgray!important;
+  color: white!important;
   text-shadow: none !important;
   font-size: 40px;
   position: relative;
@@ -455,8 +455,8 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 40px !important;
 }
 #gtco-hero .flexslider .flex-direction-nav a.flex-prev:before {
-  text-indent: 0px !important;
   font-family: 'icomoon';
+  text-indent: 0px !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -487,35 +487,38 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   content: "\e92a";
 }
-#gtco-hero .flexslider .slider-text {
-  display: table;
-  opacity: 0;
-  min-height: 700px;
-}
-#gtco-hero .flexslider .slider-text > .slider-text-inner {
-  display: table-cell;
-  vertical-align: middle;
-  min-height: 700px;
-}
-#gtco-hero .flexslider .slider-text > .slider-text-inner h2 {
-  font-size: 60px;
-  font-weight: 300;
-  color: gray;
-}
-@media screen and (max-width: 768px) {
-  #gtco-hero .flexslider .slider-text > .slider-text-inner h2 {
-    font-size: 40px;
-  }
-}
-#gtco-hero .flexslider .slider-text > .slider-text-inner .gtco-lead {
-  font-size: 20px;
-  color: gray;
-}
-#gtco-hero .flexslider .slider-text > .slider-text-inner .gtco-lead .icon-heart {
-  color: #d9534f;
+
+#gtco-hero h1 {
+    padding: 20px;
+    font-size: 20px;
+    z-index: 10;
+    text-align: center;
+    margin-top: -60px;
+    position: relative;
+    letter-spacing: 10;
+    color: gray;
+    letter-spacing: 2px;
+    background-color: white;
 }
 
-
+/*
+#gtco-hero .flexslider .slides li .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: gray;
+  opacity: .3;
+}
+*/
+.about h1 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+    letter-spacing: 2px;
+}
 /*-----SOCIAL ICONS-----*/
 .socialmedia {
   margin-top: 100px;
@@ -529,6 +532,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .gtco-section-overflow {
   overflow: hidden;
   position: relative;
+  margin-top: 50px;
 }
 .gtco-heading {
   margin-bottom: 5em;
@@ -898,6 +902,10 @@ h1, h2, h3, h4, h5, h6, figure {
   display: block;
   width: 100%;
   }
+  .about h1 {
+    font-size: 20px;
+    
+}
 }
 
 @media screen and (max-width: 380px) {
@@ -913,4 +921,3 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-bottom: 5px;
 }
 }
-
