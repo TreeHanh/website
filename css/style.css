@@ -511,11 +511,14 @@ h1, h2, h3, h4, h5, h6, figure {
 .socialmedia h3 {
     padding-top: 10px;
     padding-bottom: 40px;
+    padding-left: 300px;
+    padding-right:300px;
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
     color: gray;
     letter-spacing: 2px;
+    line-height: 30px;
 }
 /*
 #gtco-hero .flexslider .slides li .overlay {
@@ -875,6 +878,13 @@ h1, h2, h3, h4, h5, h6, figure {
     opacity: .7;
 }
 
+@media screen and (max-width: 1108px) {
+   .socialmedia h3 {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+}
+
 @media screen and (max-width: 768px) {
   .gtco-nav .menu-1, .gtco-nav .menu-2 {
     display: none;
@@ -903,7 +913,33 @@ h1, h2, h3, h4, h5, h6, figure {
   .gtco-nav .gtco-contact {
     text-align: left !important;
   }
+  .socialmedia h3 {
+    padding-left: 150px;
+    padding-right: 150px;
 }
+}
+
+@media screen and (max-width: 700px) {
+  #gtco-header .text-left {
+    text-align: center !important;
+  }
+  .gtco-nav img {
+  max-width: 300px;
+  }
+  #gtco-header .btn {
+  display: block;
+  width: 100%;
+  }
+   .socialmedia h3 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+  }
+  .socialmedia h1 {
+    font-size: 40px;  
+}
+}
+
 @media screen and (max-width: 480px) {
   #gtco-header .text-left {
     text-align: center !important;
@@ -915,9 +951,13 @@ h1, h2, h3, h4, h5, h6, figure {
   display: block;
   width: 100%;
   }
-  .about h1 {
-    font-size: 20px;
-    
+   .socialmedia h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+  }
+  .socialmedia h1 {
+    font-size: 30px;  
 }
 }
 
