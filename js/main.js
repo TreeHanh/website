@@ -371,7 +371,6 @@
 	  	});
 
 	};
-
 	
 	$(function(){
 		fullHeight();
@@ -394,6 +393,9 @@
 
 }());
 
+
+
+/*------SCROLL TO TOP---------  */ 
 var preTop = $(window).scrollTop();
 var $header = $('.gtco-nav');
 $(window).scroll(function($e){
@@ -405,8 +407,11 @@ $(window).scroll(function($e){
   }
   preTop = curTop;
 });
+/*------SCROLL TO TOP---------  */ 
 
-        
+
+
+/*------ILLUSTRATION FILTER---------  */      
 $('.port-filter .filter').click(function() {
   filter = $(this).data('filter');
   $('.active').removeClass('active');
@@ -415,13 +420,15 @@ $('.port-filter .filter').click(function() {
   $('.gtco-card-item').addClass('hidden');
   $(filter).removeClass('hidden');
 });
-
+/*------ILLUSTRATION FILTER---------  */   
   
 
 
-  var nameSuccess = false, emailSuccess = false, messageSuccess = false;
+
+/*------EMAIL-CONTACT---------  */ 
+var nameSuccess = false, emailSuccess = false, messageSuccess = false;
   
-  var $elements = $("input, textarea");
+var $elements = $("input, textarea");
   $elements.on("focus", function() {
     var $selected = $(this);
     $elements.each(function() {
@@ -535,3 +542,12 @@ $(document).ready(function() {
         });
     } 
 });
+/*------EMAIL-CONTACT---------  */ 
+
+
+
+/*------SIDE STICKY---------  */
+var sticky = new Waypoint.Sticky({
+  element: $('.sidebar')[0]
+})
+/*------SIDE STICKY---------  */
