@@ -82,9 +82,10 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Droid Sans", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
   margin: 0 0 20px 0;
+  letter-spacing: 2px;
 }
 
 
@@ -841,7 +842,7 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-left: 0px;
     margin-top: 0px;
   }
-  .content .image img {
+  .content img {
     width: 100% !important; 
   }
 }
@@ -861,19 +862,45 @@ h1, h2, h3, h4, h5, h6, figure {
 .sidebar {
   width: 100%;
   color: grey;
-  margin-left: 10%;
+  margin-left: 5%;
   position: fixed;
-  top: 200px;
+  top: 40%;
 /*  border-right: solid 1px;*/
 }
-.sidebar h3 {
-    color: #6b6050;
+.sidebar a {
+    letter-spacing: 1.5px;
 }
 .sidebar li {
     text-align: left;
     list-style: none;
     padding-bottom: 10px;
 }
-.content .image img {
+.content img {
     width: 70%;
+}
+.content h4 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    color: #b0b0b0 !important;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Roboto';
+    line-height: 30px;
+}
+.content h2 {
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    font-family: 'Roboto';
+    line-height: 30px;
+}
+.content h3 {
+    color: gray; 
+}
+.content .gtco-heading {
+    padding-top: 50px;
+}
+hr {
+    margin-top: 20px;
 }

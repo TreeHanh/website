@@ -82,7 +82,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Droid Sans", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
   margin: 0 0 20px 0;
 }
@@ -383,7 +383,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-heading h2 {
   font-family: "Roboto";
-  font-weight: 100;
+  font-weight: 300;
   font-size: 25px;
   line-height: 1.5;
   color: #6b6050;
@@ -898,6 +898,8 @@ h1, h2, h3, h4, h5, h6, figure {
     text-align: center;
     margin-top: 15px;
     text-transform: uppercase;
+    font-family: "Roboto";
+    letter-spacing: 1.5px;
 }
 
 /*----------FREELANCE------------*/
