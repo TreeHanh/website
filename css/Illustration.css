@@ -858,6 +858,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .about {
     text-align: center;
     padding-top: 50px;
+    margin-bottom: -250px;
 }
 .about h1 {
     margin-top: 90px;
