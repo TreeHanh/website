@@ -664,6 +664,16 @@ h1, h2, h3, h4, h5, h6, figure {
     letter-spacing: 2px;
 }
 
+@media screen and (max-width: 905px) {
+    .gtco-nav ul li a {
+    font-size: 14px;
+    }
+    .about .three {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+}
+
 @media screen and (max-width: 855px) {
   .gtco-nav img {
   float: none !important;
@@ -729,7 +739,7 @@ h1, h2, h3, h4, h5, h6, figure {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   #gtco-header .text-left {
     text-align: center !important;
   }
@@ -748,7 +758,13 @@ h1, h2, h3, h4, h5, h6, figure {
   .gtco-nav ul li a {
   font-size: 14px;
   margin-top: 10px;
-  } 
+  }
+  .about h3 {
+    font-size: 20px!important;
+    }
+    .about img {
+    width: 300px!important;
+    }
   }
 
 @media screen and (max-width: 480px) {
@@ -793,6 +809,14 @@ h1, h2, h3, h4, h5, h6, figure {
     #gtco-hero i{
     top: 430px !important;
    }
+     .about img {
+    width: 200px !important;
+    }
+    .about .three{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    }
+    
 }
 
 @media screen and (max-width: 380px) {
@@ -828,6 +852,35 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-container h2 {
     line-height: 35px;
+}
+
+/*----------ABOUT------------*/
+.about {
+    text-align: center;
+    padding-top: 50px;
+}
+.about h1 {
+    margin-top: 90px;
+    font-size: 30px;
+    text-align: center;
+    color: #6b6050;
+    letter-spacing: 2px;
+}
+.about h3 {
+    padding-top: 10px;
+    text-align: center;
+    color: #6b6050;
+    letter-spacing: .3px;
+    line-height: 25px;
+    font-size: 17px;
+}
+.about img {
+    width: 100%;
+    margin-top: -40px;
+}
+.about .three {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 
