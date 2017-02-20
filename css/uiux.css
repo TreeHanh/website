@@ -604,9 +604,14 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 1px;
 }
 #gtco-footer .copyright i {
-    width: 40px;
     padding-bottom: 20px;
+    padding: 7px;
+    font-size: 30px;
 }
+#gtco-footer .copyright i .fa-file {
+    font-size: 10px;
+}
+
 
 /*----------GOTOTOP------------*/
 .gototop {
