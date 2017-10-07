@@ -64,7 +64,7 @@ body {
 }
 
 a {
-  color: #94D2BA;
+  color: #5FB7B9;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -118,14 +118,18 @@ h1, h2, h3, h4, h5, h6, figure {
   transition-duration: .4s;
   transition-function: ease-in-out;
 }
+#page #img-2 {
+  display: none;
+  }
 .gtco-nav img {
+  margin-top: 11px;
   padding-left: 50px;
   max-width: 300px;
   float: left;
 }
 .gtco-nav a {
   padding: 10px;
-  color: #6B5E4E;
+  color: #636363;
   margin-top: -30px;
 }
 .gtco-nav ul {
@@ -148,7 +152,7 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 1px;
 }
 .gtco-nav ul li a:hover, .gtco-nav ul li a:focus, .gtco-nav ul li a:active {
-  color: #94D2BA;
+  color: #5FB7B9;
 }
 .gtco-nav ul li.active > a {
   color: #4E705D !important;
@@ -198,7 +202,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-hero {
   min-height: 550px;
 /*  background-color: #303850;*/
-  background-color: lightgray;
+/*  background-color: lightgray;*/
   text-align: center;
 }
 
@@ -223,7 +227,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 20px;
   margin-top: 90px;
   line-height: 1.5;
-  color: #6b6050;
+  color: #636363;
   position: relative;
   padding-bottom: 10px;
 }
@@ -235,7 +239,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: -25px;
   height: 2px;
   left: 50%;
-  background: #93d1b9;
+  background: #5FB7B9;
 }
 .gtco-heading h2.gtco-left:before {
   left: 0;
@@ -547,12 +551,19 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 @media screen and (max-width: 855px) {
+  #page #img-2 {
+  display: block;
+  padding: 15px;
+  }
+  #page #img-1 {
+  display: none;
+  }
   .gtco-nav img {
+  margin-top: -7px;
   float: none !important;
   text-align: center !important;
-  display: clear;
   padding-left: 0px;
-  max-width: 270px;
+  max-width: 170px!important;
   }
   .gtco-nav a {
   padding: 10px;
@@ -608,6 +619,15 @@ h1, h2, h3, h4, h5, h6, figure {
     }
     .about h3 {
     font-size: 20px!important;
+    }
+    #gtco-uiux {
+    padding-top: 30px;
+    }
+    #gtco-uiux .padding{
+    margin-top: -40px;
+    }
+    #gtco-illustration .padding{
+    margin-top: -40px;
     }
 }
 

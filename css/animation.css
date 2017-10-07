@@ -568,12 +568,19 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 @media screen and (max-width: 855px) {
+  #page #img-2 {
+  display: block;
+  padding: 15px;
+  }
+  #page #img-1 {
+  display: none;
+  }
   .gtco-nav img {
+  margin-top: -7px;
   float: none !important;
   text-align: center !important;
-  display: clear;
   padding-left: 0px;
-  max-width: 270px;
+  max-width: 170px!important;
   }
   .gtco-nav ul {
   padding-top: 0px;

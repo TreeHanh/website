@@ -121,7 +121,11 @@ h1, h2, h3, h4, h5, h6, figure {
   transition-duration: .4s;
   transition-function: ease-in-out;
 }
+#page #img-2 {
+  display: none;
+  }
 .gtco-nav img {
+  margin-top: 11px;
   padding-left: 50px;
   max-width: 300px;
   float: left;
@@ -655,12 +659,19 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 @media screen and (max-width: 855px) {
+  #page #img-2 {
+  display: block;
+  padding: 15px;
+  }
+  #page #img-1 {
+  display: none;
+  }
   .gtco-nav img {
+  margin-top: -7px;
   float: none !important;
   text-align: center !important;
-  display: clear;
   padding-left: 0px;
-  max-width: 270px;
+  max-width: 170px!important;
   }
   .gtco-nav a {
   padding: 10px;
